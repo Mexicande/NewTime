@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">教练时光机</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="label_sample">sample</string>
+    <string name="label_aspect_ratio">Aspect ratio</string>
+    <string name="label_dynamic">Dynamic</string>
+    <string name="label_image_source">Image source</string>
+    <string name="label_square">Square</string>
+    <string name="label_max_cropped_image_size">Max cropped image size</string>
+    <string name="label_compression_settings">Compression settings</string>
+    <string name="label_ui">UI</string>
+    <string name="label_width">Width</string>
+    <string name="label_height">Height</string>
+    <string name="label_resize_image_to_max_size">Resize image to max size</string>
+    <string name="label_hide_bottom_ui_controls">Hide bottom UI controls</string>
+    <string name="label_freestyle_crop">Freestyle crop</string>
+    <string name="label_select_picture">Select Picture</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">OK</string>
+
+    <string name="notification_image_saved">Image saved</string>
+    <string name="notification_image_saved_click_to_preview">Image saved. Click to preview.</string>
+
+    <string name="menu_download">Download</string>
+
+    <string name="button_pick_amp_crop"><![CDATA[Pick & Crop]]></string>
+    <string name="button_crop_random_image">Crop random image</string>
+
+    <string name="description_cropped_image">Cropped image</string>
+
+    <string name="format_crop_result_d_d">Crop Result (%1$dx%2$d)</string>
+    <string name="format_quality_d">Quality: %d</string>
+    <string name="format_d_d_px">%1$dx%2$d px</string>
+
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="permission_write_storage_rationale">Storage write permission is needed to save the image.</string>
+
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+
+    <string name="file_provider_authorities">com.yalantis.ucrop.provider</string>
+    <string name="back">返回</string>
+
+    <!--其他人资料-->
+    <string name="user_information">个人资料</string>
+    <string name="my_attention">我的关注</string>
+    <string name="my_fans">我的粉丝</string>
+    <string name="str_setting">设置</string>
+    <string name="stage">学习阶段</string>
+    <string name="learn_fromTime">入学时间</string>
+    <string name="oath">穿梭誓言</string>
+    <string name="other_time">TA的时光机</string>
+    <string name="label">个人标签</string>
+    <string name="done">确定</string>
+    <string name="tag_same">标签已存在</string>
+    <string name="tag_max">超过个数限制</string>
+    <string name="forget">忘记密码</string>
+    <string name="update_pw">修改密码</string>
+    <string name="please_phone">请输入您的手机号</string>
+    <string name="please_ver">请输入验证码</string>
+    <string name="attention">已关注</string>
+    <string name="order">预约</string>
+    <string name="description">初任中层领导者如何赋能升级</string>
+    <string name="example">2017-10-19 21:00 ~ 22:30</string>
+    <string name="label_three">皇冠三颗星</string>
+    <string name="label_two">五连杀</string>
+    <string name="label_one">加血</string>
+    <string name="school">领导力赋能 首席教练</string>
+    <string name="nick">Nicole Elliott</string>
+
+
+    <!--  user_information-->
+    <string name="user_header">头像</string>
+    <string name="user_nick">昵称</string>
+    <string name="user_name">姓名</string>
+    <string name="user_sex">性别</string>
+    <string name="user_birthday">出生日期</string>
+    <string name="user_city">现居城市</string>
+    <string name="user_label">我的标签</string>
+    <string name="user_desc">穿梭誓言</string>
+    <string name="user_title">编辑个人资料</string>
+
+    <!--   setting    -->
+    <string name="SettingTitle">设置</string>
+    <string name="My_location">我的位置</string>
+    <string name="About">关于时光机</string>
+    <string name="Quit">退出登录</string>
+    <string name="location_desc">打开后，可以查看你与好友的相对距离</string>
+
+</resources>

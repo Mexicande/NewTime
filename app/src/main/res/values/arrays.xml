@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme">
+        <item>职业</item>
+        <item>亲子</item>
+        <item>领导力</item>
+        <item>人际</item>
+        <item>演讲</item>
+    </string-array>
+
+    <string-array name="between">
+        <item>朋友同事</item>
+        <item>非直系亲属</item>
+        <item>直系亲属</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>不满6个月</item>
+        <item>6个月-1年</item>
+        <item>1-3年</item>
+        <item>3年以上</item>
+    </string-array>
+
+
+    <string-array name="times">
+        <item>1周</item>
+        <item>1个月</item>
+        <item>3个月</item>
+        <item>6个月</item>
+        <item>永久</item>
+    </string-array>
+
+    <string-array name="home_money">
+        <item>500元</item>
+        <item>1000元</item>
+        <item>2000元</item>
+        <item>5000元</item>
+        <item>8000元</item>
+        <item>大于1万元</item>
+    </string-array>
+</resources>

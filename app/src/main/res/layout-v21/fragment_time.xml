@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cn.com.timemachine.ui.fragment.TimeFragment">
+    <include layout="@layout/toolbar_item"/>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:id="@+id/iv_dateLast"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/iv_last"
+                         />
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:textColor="#818181"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:id="@+id/iv_dateNext"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/iv_next"
+                        tools:targetApi="lollipop" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#F9F9F9"
+                    android:layout_height="2dp"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="SUN"
+                        android:textColor="#cccccc"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="MON"
+                        android:textColor="#818181"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="TUE"
+                        android:textColor="#818181"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="WED"
+                        android:textColor="#818181"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="THU"
+                        android:textColor="#818181"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="FRI"
+                        android:textColor="#818181"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="SAT"
+                        android:textColor="#818181"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <com.necer.ncalendar.calendar.NCalendar
+                    android:id="@+id/ncalendarrrr"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:firstDayOfWeek="Sunday"
+                    app:pointSize="20sp"
+                    app:pointColor="#50D8D8D8"
+                    app:isShowLunar="false"
+                    app:backgroundColor="@color/white"
+                    app:solarTextColor="#797979"
+                    app:hintColor="#cccccc"
+                    app:isShowHoliday="false"
+                    app:selectCircleColor="#009EFD"
+                    app:defaultCalendar="Week"
+                    app:calendarHeight="210dp"
+                    app:solarTextSize="13sp"
+                    >
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/time_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+                </com.necer.ncalendar.calendar.NCalendar>
+            </LinearLayout>
+
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="16dp"
+            android:src="@mipmap/iv_float_action"
+            fab:fab_colorNormal="#501cd9b9"
+            fab:fab_colorPressed="@color/shape1"
+            fab:fab_colorRipple="@color/shape2"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
