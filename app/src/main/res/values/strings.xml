@@ -1,8 +1,5 @@
 <resources>
-    <string name="app_name">教练时光机</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">布客教练</string>
 
     <string name="label_sample">sample</string>
     <string name="label_aspect_ratio">Aspect ratio</string>
@@ -70,7 +67,7 @@
     <string name="label_three">皇冠三颗星</string>
     <string name="label_two">五连杀</string>
     <string name="label_one">加血</string>
-    <string name="school">领导力赋能 首席教练</string>
+    <string name="school">领导力赋能 • 首席教练</string>
     <string name="nick">Nicole Elliott</string>
 
 
@@ -82,7 +79,7 @@
     <string name="user_birthday">出生日期</string>
     <string name="user_city">现居城市</string>
     <string name="user_label">我的标签</string>
-    <string name="user_desc">穿梭誓言</string>
+    <string name="user_desc">个人简介</string>
     <string name="user_title">编辑个人资料</string>
 
     <!--   setting    -->
@@ -91,5 +88,8 @@
     <string name="About">关于时光机</string>
     <string name="Quit">退出登录</string>
     <string name="location_desc">打开后，可以查看你与好友的相对距离</string>
+    <string name="educational">教育信息</string>
+    <string name="occupational">职业信息</string>
+    <string name="CoachSpecialty">教练认证</string>
 
 </resources>

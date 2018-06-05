@@ -25,9 +25,8 @@ public class UpdatePWActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
-        tvTitle.setText(getResources().getString(R.string.forget));
+        tvTitle.setText(getResources().getString(R.string.update_pw));
     }
-
     @Override
     protected int setLayoutId() {
         return R.layout.activity_update_pw;

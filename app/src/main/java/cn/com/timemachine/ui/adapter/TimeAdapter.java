@@ -23,7 +23,8 @@ public class TimeAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
     protected void convert(BaseViewHolder helper, String item) {
 
         helper.setText(R.id.user_nick,item)
-                .addOnClickListener(R.id.super_delect);
+                .addOnClickListener(R.id.super_delect)
+                .addOnClickListener(R.id.super_order);
     }
 
 

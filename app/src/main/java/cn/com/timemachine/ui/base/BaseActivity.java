@@ -40,6 +40,7 @@ public abstract  class BaseActivity extends AppCompatActivity {
         //在BaseActivity里初始化
         mImmersionBar = ImmersionBar.with(this);
         mImmersionBar.init();
+
     }
     protected abstract int setLayoutId();
 

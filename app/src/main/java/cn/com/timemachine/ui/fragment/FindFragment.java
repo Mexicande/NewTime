@@ -67,6 +67,7 @@ public class FindFragment extends BaseLazyFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        ImmersionBar.setTitleBar(getActivity(), toolbar);
         initFragment();
         mFragmentContainerHelper.attachMagicIndicator(magicIndicator);
         setListener();
@@ -155,18 +156,4 @@ public class FindFragment extends BaseLazyFragment {
 
 
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        unbinder = ButterKnife.bind(this, rootView);
-        ImmersionBar.setTitleBar(getActivity(), toolbar);
-        return rootView;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder.unbind();
-    }
 }

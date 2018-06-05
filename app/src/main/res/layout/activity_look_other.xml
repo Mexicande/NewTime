@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context="cn.com.timemachine.ui.activity.find.LookOtherActivity">
     <include layout="@layout/back_toolbar_item"/>
@@ -201,10 +202,10 @@
                         <cn.com.timemachine.view.supertextview.SuperTextView
                             android:layout_width="match_parent"
                             app:sLeftTextString="审核"
-                            app:sCenterTextString="请选择"
+                            app:sCenterTextString="必须审核"
                             app:sLeftTextColor="@color/text_black_color03"
                             app:sCenterViewGravity="center"
-                            app:sCenterTextColor="@color/gay_text"
+                            app:sCenterTextColor="@color/text_black_color33"
                             app:sRightIconRes="@mipmap/iv_black_right"
                             app:sRightIconWidth="10dp"
                             app:sRightIconHeight="20dp"
@@ -219,6 +220,7 @@
                              android:layout_height="50dp" />
                         <android.support.v7.widget.RecyclerView
                             android:id="@+id/time_recycler"
+                            android:background="@color/white"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                         </android.support.v7.widget.RecyclerView>

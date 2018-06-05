@@ -17,6 +17,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_header"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:sLeftTextString="@string/user_header"
@@ -31,6 +32,7 @@
                 app:sRightTvDrawableWidth="35dp"
                 />
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_nick"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:sLeftTextString="@string/user_nick"
@@ -45,6 +47,7 @@
                 app:sRightTextColor="@color/gay_text"
                 />
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_name"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -60,6 +63,7 @@
                 app:sRightTextColor="@color/gay_text"
                 />
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_sex"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:sLeftTextString="@string/user_sex"
@@ -74,6 +78,7 @@
                 app:sRightTextColor="@color/gay_text"
                 />
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_birthday"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:sLeftTextString="@string/user_birthday"
@@ -88,6 +93,7 @@
                 app:sRightTextColor="@color/gay_text"
                 />
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_city"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:sLeftTextString="@string/user_city"
@@ -102,6 +108,39 @@
                 app:sRightTextColor="@color/gay_text"
                 />
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_educational"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:sLeftTextString="@string/educational"
+                app:sLeftTextSize="@dimen/Info_RightSize"
+                app:sLeftTextColor="@color/text_black_color33"
+                app:sRightIconHeight="12dp"
+                app:sRightIconWidth="12dp"
+                app:sRightIconRes="@mipmap/iv_user_right"
+                app:sRightViewMarginRight="1dp"
+
+                app:sRightTextString="请选择教育信息"
+                app:sRightTextSize="@dimen/Info_LeftSize"
+                app:sRightTextColor="@color/gay_text"
+                />
+            <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/occupational"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:sLeftTextString="@string/occupational"
+                app:sLeftTextSize="@dimen/Info_RightSize"
+                app:sLeftTextColor="@color/text_black_color33"
+                app:sRightIconHeight="15dp"
+                app:sRightIconWidth="15dp"
+                app:sRightIconRes="@mipmap/iv_user_right"
+                app:sRightViewMarginRight="1dp"
+                app:sRightTextString="请选择职业信息"
+                app:sRightTextSize="@dimen/Info_LeftSize"
+                app:sRightTextColor="@color/gay_text"
+                />
+            <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_label"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -112,12 +151,12 @@
                 app:sRightIconWidth="12dp"
                 app:sRightIconRes="@mipmap/iv_user_right"
                 app:sRightViewMarginRight="1dp"
-
-                app:sRightTextString="贴上标签，让别人更容易找到你"
+                app:sRightTextString="请选择"
                 app:sRightTextSize="@dimen/Info_LeftSize"
                 app:sRightTextColor="@color/gay_text"
                 />
             <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/bt_desc"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:sLeftTextString="@string/user_desc"
@@ -127,7 +166,7 @@
                 app:sRightIconWidth="15dp"
                 app:sRightIconRes="@mipmap/iv_user_right"
                 app:sRightViewMarginRight="1dp"
-                app:sRightTextString="聊聊你的时光机！"
+                app:sRightTextString="请选择"
                 app:sRightTextSize="@dimen/Info_LeftSize"
                 app:sRightTextColor="@color/gay_text"
                 />

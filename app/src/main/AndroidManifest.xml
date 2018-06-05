@@ -21,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
         <activity android:name=".ui.base.BaseActivity" />
         <activity android:name=".ui.activity.TimeActivity" />
         <activity android:name=".ui.activity.ResultActivity" />
@@ -31,14 +41,14 @@
         <activity android:name=".ui.activity.SuccessRegisterActivity" />
         <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.OtherCenterActivity" />
-        <!-- <activity android:name=".ui.activity.HtmlActivity"></activity> -->
         <activity android:name=".ui.activity.FindPwActivity" />
         <activity android:name=".ui.activity.EditInforActivity" />
         <activity android:name=".ui.activity.EditDateActivity" />
         <activity android:name=".ui.activity.SettingActivity" />
         <activity android:name=".ui.activity.AboutActivity" />
         <activity android:name=".ui.activity.time.ReleaseTimeActivity" />
-        <activity android:name=".ui.activity.find.LookOtherActivity"></activity>
+        <activity android:name=".ui.activity.find.LookOtherActivity" />
+        <activity android:name=".ui.activity.center.CoachApproveActivity"></activity>
     </application>
 
 </manifest>

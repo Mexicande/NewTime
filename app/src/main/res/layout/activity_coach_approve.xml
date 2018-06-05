@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="cn.com.timemachine.ui.activity.center.CoachApproveActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <include layout="@layout/back_toolbar_item"/>
+            <cn.com.timemachine.view.supertextview.SuperTextView
+                android:id="@+id/specialty"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                app:sLeftTextString="专业领域"
+                app:sRightTextString="领导力"
+                app:sLeftTextColor="@color/text_black_color03"
+                app:sCenterViewGravity="center"
+                app:sCenterTextColor="@color/gay_text"
+                app:sRightIconRes="@mipmap/iv_black_right"
+                app:sRightIconWidth="10dp"
+                app:sRightIconHeight="20dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:text="证件照片 "
+                android:textSize="16sp"
+                android:layout_height="40dp" />
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:text="请在下方上传 (最多可上传五张）"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/list_item_image"/>
+            <cn.com.timemachine.view.supertextview.SuperButton
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                app:sCornersRadius="5dp"
+                android:text="提交审核"
+                android:enabled="false"
+                app:sSelectorDisableColor="@color/colorPrimary"
+                app:sUseSelector="true"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

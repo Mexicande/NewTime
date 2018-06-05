@@ -210,6 +210,17 @@
                             app:sRightIconWidth="10dp"
                             app:sRightIconHeight="20dp"
                             android:layout_height="50dp"/>
+                        <cn.com.timemachine.view.supertextview.SuperTextView
+                            android:layout_width="match_parent"
+                            app:sLeftTextString="发布到"
+                            app:sCenterTextString="请选择"
+                            app:sLeftTextColor="@color/text_black_color03"
+                            app:sCenterViewGravity="center"
+                            app:sCenterTextColor="@color/gay_text"
+                            app:sRightIconRes="@mipmap/iv_black_right"
+                            app:sRightIconWidth="10dp"
+                            app:sRightIconHeight="20dp"
+                            android:layout_height="50dp"/>
                         <cn.com.timemachine.view.supertextview.SuperButton
                             android:layout_marginTop="30dp"
                             android:layout_width="match_parent"
@@ -224,6 +235,8 @@
                             android:textColor="@color/white"
                             android:layout_height="50dp"
                             android:layout_marginBottom="40dp"/>
+
+
                     </LinearLayout>
                 </android.support.v4.widget.NestedScrollView>
             </com.necer.ncalendar.calendar.NCalendar>

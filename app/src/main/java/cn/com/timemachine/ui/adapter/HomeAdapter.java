@@ -11,18 +11,20 @@ import java.util.List;
 import cn.com.timemachine.R;
 
 /**
- * Created by apple on 2017/12/29.
+ *
+ * @author apple
+ * @date 2017/12/29
+ * 发现
  */
 
 public class HomeAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 
-    public HomeAdapter(int layout, List<String> data) {
-        super(layout, data);
+    public HomeAdapter( List<String> data) {
+        super(R.layout.home_item, data);
     }
 
     @Override
     protected void convert(BaseViewHolder helper, String item) {
-
         helper.setText(R.id.user_nick,item);
     }
 

@@ -59,6 +59,13 @@ public class LookOtherActivity extends BaseActivity implements OnCalendarChanged
     }
 
     @Override
+    protected void initImmersionBar() {
+        super.initImmersionBar();
+        mImmersionBar.titleBar(R.id.toolbar)
+                .navigationBarColor(R.color.shape1)
+                .init();
+    }
+    @Override
     protected int setLayoutId() {
         return R.layout.activity_look_other;
     }
@@ -70,7 +77,7 @@ public class LookOtherActivity extends BaseActivity implements OnCalendarChanged
         list.add("Dname");
         list.add("Ename");
         list.add("Fname");
-        mHomeAdapter=new HomeAdapter(R.layout.home_item,null);
+        mHomeAdapter=new HomeAdapter(null);
         timeRecycler.setLayoutManager(new LinearLayoutManager(this));
         timeRecycler.setAdapter(mHomeAdapter);
         mHomeAdapter.addData(list);
@@ -88,7 +95,7 @@ public class LookOtherActivity extends BaseActivity implements OnCalendarChanged
             }
         });
         ncalendarrrr.setOnCalendarChangedListener(this);
-
+        ncalendarrrr.toWeek();
 
     }
     @Override

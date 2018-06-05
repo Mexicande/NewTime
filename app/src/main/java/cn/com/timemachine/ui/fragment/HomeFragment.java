@@ -11,6 +11,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.chad.library.adapter.base.BaseQuickAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +23,10 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.com.timemachine.R;
 import cn.com.timemachine.common.ConstanceValue;
+import cn.com.timemachine.ui.activity.find.LookOtherActivity;
 import cn.com.timemachine.ui.adapter.HomeAdapter;
+import cn.com.timemachine.utils.ActivityUtils;
+import cn.com.timemachine.utils.ToastUtils;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -72,6 +78,13 @@ public class HomeFragment extends Fragment {
                 }, 2000);
             }
         });
+        mHomeAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+                ToastUtils.showToast("position="+position);
+                ActivityUtils.startActivity(LookOtherActivity.class);
+            }
+        });
     }
 
     private void initAdapter() {
@@ -82,7 +95,7 @@ public class HomeFragment extends Fragment {
         list.add("Dname");
         list.add("Ename");
         list.add("Fname");
-        mHomeAdapter=new HomeAdapter(R.layout.home_item,null);
+        mHomeAdapter=new HomeAdapter(null);
         recycler.setLayoutManager(new LinearLayoutManager(getActivity()));
         recycler.setAdapter(mHomeAdapter);
         mHomeAdapter.addData(list);
@@ -90,6 +103,7 @@ public class HomeFragment extends Fragment {
                 R.color.colorPrimaryDark,
                 R.color.colorPrimary
                 );
+
     }
 
     @Override

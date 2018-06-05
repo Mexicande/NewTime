@@ -23,7 +23,8 @@
             android:text="Nicole Elliott"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="198dp"
+            android:layout_height="208dp"
+            android:paddingBottom="10dp"
             android:background="@drawable/shadow_bg"
             android:clickable="true"
             android:orientation="vertical"

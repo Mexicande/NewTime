@@ -48,22 +48,12 @@ public class OtherCenterActivity extends AppCompatActivity {
     }
 
     private void initView() {
-      /*  FlexboxLayoutManager manager = new FlexboxLayoutManager();
-        //设置主轴排列方式
-        //设置是否换行
-        manager.setFlexWrap(FlexWrap.WRAP);
-        manager.setFlexDirection(FlexDirection.ROW);
-        manager.setJustifyContent(JustifyContent.FLEX_START);
-        manager.setAlignItems(AlignItems.STRETCH);
-        ivRecycler.setLayoutManager(manager);
-        mFlexBoxAdapter = new FlexBoxAdapter(list);
-        ivRecycler.setAdapter(mFlexBoxAdapter);*/
         usualTagsContainer.removeAllViews();
         for(final String text : list){
             usualTagsContainer.addView(ViewUtils.getTagLayout(this, text, new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //mTagEditText.commitUsualTag(text);
+
                 }
             }));
         }

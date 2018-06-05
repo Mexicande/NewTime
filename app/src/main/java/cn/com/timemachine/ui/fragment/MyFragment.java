@@ -34,6 +34,7 @@ import cn.com.timemachine.ui.activity.AboutActivity;
 import cn.com.timemachine.ui.activity.EditInforActivity;
 import cn.com.timemachine.ui.activity.LoginActivity;
 import cn.com.timemachine.ui.activity.SettingActivity;
+import cn.com.timemachine.ui.activity.center.CoachApproveActivity;
 import cn.com.timemachine.ui.base.BaseLazyFragment;
 import cn.com.timemachine.utils.ActivityUtils;
 import cn.com.timemachine.utils.GlideImageUtils;
@@ -70,7 +71,7 @@ public class MyFragment extends BaseLazyFragment {
 
     @Override
     protected boolean isLazyLoad() {
-        return false;
+        return true;
     }
 
     @Override
@@ -83,9 +84,9 @@ public class MyFragment extends BaseLazyFragment {
         // TODO: inflate a fragment view
         View rootView = super.onCreateView(inflater, container, savedInstanceState);
         unbinder = ButterKnife.bind(this, rootView);
-       /* Glide.with(this).load(R.mipmap.header)
-                .apply(bitmapTransform(new BlurTransformation(25)))
-                .into(bvDynamicBlur);*/
+        Glide.with(this).load(R.mipmap.header)
+                .apply(bitmapTransform(new BlurTransformation(1)))
+                .into(bvDynamicBlur);
 
         if (glideImageUtils != null && images.size() != 0) {
             Glide.with(this).load(images.get(0).path)
@@ -169,7 +170,8 @@ public class MyFragment extends BaseLazyFragment {
     }
 
 
-    @OnClick({R.id.super_infor, R.id.super_attention, R.id.super_fans, R.id.super_setting,R.id.circularImage})
+    @OnClick({R.id.super_infor, R.id.super_attention, R.id.super_fans,
+            R.id.super_setting,R.id.circularImage,R.id.super_coach})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.super_infor:
@@ -185,6 +187,10 @@ public class MyFragment extends BaseLazyFragment {
                 break;
             case R.id.circularImage:
                 pickFromGallery();
+                break;
+            case R.id.super_coach:
+                ActivityUtils.startActivity(CoachApproveActivity.class);
+
                 break;
             default:
                 break;

@@ -31,6 +31,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 import cn.com.timemachine.R;
+import cn.com.timemachine.ui.activity.OtherCenterActivity;
+import cn.com.timemachine.ui.activity.find.LookOtherActivity;
 import cn.com.timemachine.ui.activity.time.ReleaseTimeActivity;
 import cn.com.timemachine.ui.adapter.HomeAdapter;
 import cn.com.timemachine.ui.adapter.TimeAdapter;
@@ -107,6 +109,9 @@ public class TimeFragment extends BaseLazyFragment implements OnCalendarChangedL
                     case R.id.super_delect:
                         list.remove(position);
                         mHomeAdapter.remove(position);
+                        break;
+                    case R.id.super_order:
+                        ActivityUtils.startActivity(OtherCenterActivity.class);
                         break;
                     default:
                         break;

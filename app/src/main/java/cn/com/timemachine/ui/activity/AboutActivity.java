@@ -42,4 +42,12 @@ public class AboutActivity extends BaseActivity {
                 break;
         }
     }
+
+    @Override
+    protected void initImmersionBar() {
+        super.initImmersionBar();
+        mImmersionBar.titleBar(R.id.toolbar)
+                .navigationBarColor(R.color.shape1)
+                .init();
+    }
 }

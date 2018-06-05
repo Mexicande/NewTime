@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context="cn.com.timemachine.ui.activity.UpdatePWActivity">
     <include layout="@layout/back_toolbar_item"/>
-
     <cn.com.timemachine.view.editext.PowerfulEditText
         android:id="@+id/et_PassWord"
         android:elevation="1dp"
@@ -41,7 +40,7 @@
         android:elevation="1dp"
         android:layout_marginTop="20dp"
         android:theme="@style/MyEditText"
-        android:hint="请输入密码"
+        android:hint="确认新密码"
         android:paddingLeft="10dp"
         android:maxLines="20"
         android:paddingRight="10dp"
